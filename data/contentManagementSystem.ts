@@ -13,6 +13,8 @@ export const PageTypes = {
   SINGLE_ARTICLE: 'singleArticle'
 } as const;
 
+
+
 export type PageType = typeof PageTypes[keyof typeof PageTypes];
 
 export interface ContentItem {
@@ -38,8 +40,9 @@ export interface ContentItem {
   canonicalUrl?: string;
   author: string | null;
 }
-
-export const contentStructure: ContentItem[] = contentData.map(item => ({
+const contentDataArray: any[] = Array.isArray(contentData) ? contentData : []; // 配列であることを確認
+// ... existing code ...
+export const contentStructure: ContentItem[] = contentDataArray.map(item => ({
   ...item,
   id: String(item.id),
   publishedDate: (item as any).publishedDate || (item as any).publisedDate || '',
