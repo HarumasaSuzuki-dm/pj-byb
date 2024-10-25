@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  /* max-width: 390px; */ /* モバイル幅に固定する必要がない場合は削除 */
+  margin: 0; /* 左右のマージンを削除 */
+  
+  padding: 3rem 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: var(--spacing-small);
+}
+
+.cardContainer {
+  background-color: var(--color-secondary);
+  padding: var(--spacing-large) var(--spacing-medium);
+  border-radius: 0.5rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 常に2列表示 */
+  gap: var(--spacing-large);
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-medium);
+  height: 140px;
+  border-radius: 0.5rem;
+  background-color: var(--color-background);
+  transition: all 0.3s ease;
+}
+
+.serviceItem:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  margin-bottom: var(--spacing-medium);
+}
+
+.serviceName {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

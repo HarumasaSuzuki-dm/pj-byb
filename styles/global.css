@@ -1,0 +1,223 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #000000;
+  /* メインカラー: 黒 */
+  --color-secondary: #F8F9FB;
+  /* サブカラー: 白 */
+  --color-accent: #F7A600;
+  /* アクセントカラー: 赤 */
+  --color-background: #F8F8F8;
+  /* バックグラウンドカラー: ライトグレー */
+  --color-text: #333333;
+  /* テキストカラー: 濃いグレー */
+  --color-cta: #F7A600;
+  /* CTAカラー: 緑 */
+  --container-width: 375px;
+  /* スマートフォンの幅 */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --width-1: 320px; /* モバイル幅 */
+  --width-2: 640px;
+  --width-3: 768px;
+  --width-4: 1024px;
+  --width-5: 1280px;
+  --width-6: 1536px;
+  --max-width: var(--width-5);
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  /* 行間の調整 */
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  /* 中央寄せ */
+  padding: 0 var(--spacing-medium);
+  /* コンテンツの左右に余白 */
+}
+
+h1 {
+  font-size: 18px;
+  /* 見出しフォントサイズ */
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  /* 本文フォントサイズ */
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: var(--spacing-medium);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  min-width: 44px;
+  /* タップしやすさを考慮 */
+  min-height: 44px;
+  /* タップしやすさを考慮 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--color-accent);
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-button img {
+  width: 16px;
+  height: 16px;
+  margin-right: var(--spacing-small);
+}
+
+/* 新しい汎用クラス */
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-large);
+}
+
+.card {
+  background-color: var(--color-secondary);
+  padding: var(--spacing-large) var(--spacing-medium);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mt-1 {
+  margin-top: var(--spacing-small);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-medium);
+}
+
+.mt-4 {
+  margin-top: var(--spacing-large);
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-small);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-medium);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-large);
+}
+
+.py-1 {
+  padding-top: var(--spacing-small);
+  padding-bottom: var(--spacing-small);
+}
+
+.py-2 {
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+}
+
+.py-4 {
+  padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-large);
+}
+
+.px-1 {
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+}
+
+.px-2 {
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
+}
+
+.px-4 {
+  padding-left: var(--spacing-large);
+  padding-right: var(--spacing-large);
+}
+
+
+@media (min-width: 768px) {
+
+  /* タブレット用スタイル */
+  :root {
+    --container-width: 720px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .vertical-list {
+    gap: calc(var(--spacing-large) * 1.5);
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* デスクトップ用スタイル */
+  :root {
+    --container-width: 960px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .vertical-list {
+    gap: calc(var(--spacing-large) * 2);
+  }
+}

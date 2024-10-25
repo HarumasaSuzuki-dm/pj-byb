@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+    max-width: 390px; /* モバイル幅に固定 */
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
+
+.verticalList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+}
+
+.card {
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    padding: var(--spacing-medium);
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconWrapper {
+    margin-bottom: var(--spacing-small);
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    color: var(--color-accent);
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+
+.description {
+    /* font-size: 12px; */
+    text-align: center;
+    
+    margin-bottom: var(--spacing-medium);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.buttonWrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.button {
+    background-color: var(--color-cta);
+    color: var(--color-text);
+    padding: var(--spacing-medium);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+.button:hover,
+.button:active {
+    background-color: var(--color-accent);
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

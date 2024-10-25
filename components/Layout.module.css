@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-size: var(--font-size-3);
+  line-height: 1.6;
+  font-family: var(--sans);
+}
+
+.innerContainer {
+  background-color: var(--background-primary);
+  box-shadow: 0 1px 4px 0 var(--border-secondary);
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: var(--background-primary);
+  padding: 0;
+}
+
+.footer {
+  background-color: var(--background-primary);
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .innerContainer {
+    max-width: var(--width-2);
+  }
+}
+
+/* アクセシビリティ */
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* プリント用スタイル */
+@media print {
+
+  .header,
+  .footer {
+    display: none;
+  }
+
+  .main {
+    padding-top: 0;
+    min-height: auto;
+  }
+}

@@ -1,0 +1,124 @@
+.section {
+    background-color: var(--color-background);
+    padding: var(--spacing-large) 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px; /* モバイル幅に固定 */
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.titleIcon {
+    display: inline-block;
+    margin-right: var(--spacing-small);
+    color: var(--color-primary);
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column; /* 常に縦方向に表示 */
+    gap: var(--spacing-large);
+}
+
+.card {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-large);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: var(--spacing-medium);
+}
+
+.cardText {
+    margin-bottom: var(--spacing-medium);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+}
+
+.contactLabel {
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+.emailLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+}
+
+.emailIcon {
+    margin-right: var(--spacing-small);
+}
+
+.emailAddress {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.scheduleText {
+    font-size: 14px;
+    margin-bottom: var(--spacing-medium);
+    text-align: left;
+}
+
+.highlight {
+    font-size: 21px;
+    color: var(--color-primary);
+    margin: 0 var(--spacing-small);
+}
+
+.btnPrimary {
+    background-color: var(--color-cta);
+    color: var(--color-secondary);
+    font-weight: bold;
+    padding: var(--spacing-medium);
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.btnSecondary {
+    /* background-color: var(--color-secondary); */
+    color: var(--color-accent);
+    font-weight: bold;
+    padding: var(--spacing-medium);
+    /* border-radius: 5px; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid var(--color-primary); */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnIcon {
+    margin-left: var(--spacing-small);
+}
+
+.ctaContainer {
+    text-align: center;
+    margin-top: var(--spacing-large);
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

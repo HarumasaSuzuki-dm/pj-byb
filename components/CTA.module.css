@@ -1,0 +1,141 @@
+.heading {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    position: relative;
+    padding: 15px 15px;
+}
+
+.blueLine {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    margin: 0 10px;
+    position: relative;
+    background-color: #D88B18; /* blueLineの場合 */
+}
+
+.redLine {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    margin: 0 10px;
+    position: relative;
+    background-color: #F7A600; /* redLineの場合 */
+}
+
+.redLine:first-of-type, .blueLine:first-of-type {
+    transform: rotate(45deg); /* 右上がりに斜め */
+}
+
+.redLine:last-of-type, .blueLine:last-of-type {
+    transform: rotate(-45deg); /* 左上がりに斜め */
+}
+
+.section {
+    padding: 20px 0 40px;
+    width: 100%;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: -apple-system, Roboto, NotoSansJP, sans-serif;
+}
+
+.container {
+    max-width: 375px; /* モバイル幅に固定 */
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.spaceY8 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* モバイルでの子要素間のスペース */
+}
+
+.textCenter {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* モバイルでの余白 */
+}
+
+.linkButton {
+    background-color: #F7A600;
+    color: #121214;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    min-height: 40px;
+    min-width: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: cente3r;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+    border: 1px solid #F7A600;
+    border-radius: 10px;
+    padding: 8px 6px;
+    margin: 12px 0;
+    text-decoration: none;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgb(195, 205, 219);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+.infoHeading {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.infoList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.infoList li {
+    display: flex;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.linkText {
+    color: #D88B18;
+    text-decoration: none;
+    display: inline-flex; /* リンクとアイコンを横並びにする */
+    align-items: center; /* アイコンとテキストを中央に揃える */
+    vertical-align: middle; /* 中央揃えにする */
+}
+
+.iconSmall {
+    margin-left: 0.5rem; /* テキストとアイコンの間に余白を追加 */
+    vertical-align: middle; /* 中央揃えにする */
+}
+
+.campaignSection {
+    margin-top: 2rem;
+}
+
+.fullWidthLink {
+    display: block;
+    max-width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

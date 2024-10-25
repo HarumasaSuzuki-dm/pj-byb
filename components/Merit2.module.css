@@ -1,0 +1,146 @@
+.meritSection {
+  background-color: var(--color-background);
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 375px; /* モバイル幅に固定 */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 4rem;
+}
+
+.highlightedText {
+  background-image: linear-gradient(to top, #FFD71A 30%, transparent 31%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.smallText {
+  font-size: 0.875rem;
+}
+
+.mobileBreak {
+  display: block;
+}
+
+.meritList {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.meritItem {
+  background-color: var(--color-secondary);
+  padding: 3rem 1.5rem 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meritHeader {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.meritNumber {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  width: 2.875rem;
+  height: 2.875rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+.meritLabel {
+  position: absolute;
+  top: -0.9375rem;
+  left: -0.625rem;
+  right: -0.625rem;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+}
+
+.meritTitle {
+  color: var(--color-primary);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.noteText {
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.meritImageContainer {
+  margin: 1rem 0;
+}
+
+.meritImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.meritDescription {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.notes {
+  margin-top: 2rem;
+  max-width: 375px; /* モバイル幅に固定 */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.75rem;
+  
+}
+
+.note {
+  margin-bottom: 0.5rem;
+}
+
+.noteNumber {
+  font-weight: bold;
+  margin-right: 0.25rem;
+}
+
+
+.noteContent {
+  flex-grow: 1;
+}
+
+.noteLink {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

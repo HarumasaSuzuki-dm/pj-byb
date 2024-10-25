@@ -1,0 +1,119 @@
+.reliabilitySection {
+    max-width: 375px; /* モバイル幅に固定 */
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: white;
+}
+
+.container {
+    background-color: white;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.titleText {
+    display: block;
+    color: var(--color-primary);
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+.titleHighlight {
+    color: var(--color-primary);
+    font-size: 52px;
+    font-weight: bold;
+    padding: 0 var(--spacing-small);
+    /* background-image: linear-gradient(to top, var(--color-accent) 30%, transparent 31%); */
+    display: inline-block;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.awardItem {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    width: 100%;
+    /* 1列に配置 */
+}
+
+.awardImage {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footnote {
+    font-size: 12px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.bannerImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.badgeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* 2列に配置するために折り返しを許可 */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--spacing-large);
+}
+
+.badgeItem {
+    flex: 0 0 48%;
+    /* 2列に配置するための幅を設定 */
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+
+.badgeImage {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footnoteList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footnoteList li {
+    margin-bottom: var(--spacing-small);
+}
+
+.footnoteNumber {
+    font-weight: bold;
+    margin-right: var(--spacing-small);
+}
+
+.noteList {
+    margin-top: 2rem;
+    max-width: 375px; /* モバイル幅に固定 */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75rem;
+    
+  }
+  
+  .noteItem {
+    margin-bottom: 0.5rem;
+  }
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

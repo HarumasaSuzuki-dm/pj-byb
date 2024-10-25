@@ -1,0 +1,120 @@
+.accountOpeningSteps {
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+    max-width: 390px; /* モバイル幅に固定 */
+    margin: 0 auto; /* 中央揃え */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.subtitle {
+    display: block;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-medium);
+}
+
+.highlightedTitle {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: var(--spacing-small) var(--spacing-medium);
+    /* background-color: var(--color-accent); */
+    background-opacity: 0.3;
+}
+
+.stepList {
+    display: flex;
+    flex-direction: column; /* 常に縦方向に表示 */
+    gap: var(--spacing-large);
+}
+
+.stepCard {
+    position: relative;
+    padding: var(--spacing-small);
+    width: 100%; /* 常に全幅を使用 */
+    margin-bottom: calc(var(--spacing-medium) * 2); /* 矢印のための余白を追加 */
+}
+
+.stepCardBorder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--color-accent);
+}
+
+.stepContent {
+    text-align: center;
+}
+
+.stepHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+}
+
+.stepNumber {
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.stepTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.stepImageContainer {
+    margin-top: var(--spacing-medium);
+}
+
+.stepImage {
+    width: 10rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.stepArrow {
+    position: absolute;
+    bottom: -2.9rem; /* 矢印の位置を調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepArrow span {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.ctaContainer {
+    text-align: center;
+    margin-top: var(--spacing-large);
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-cta);
+    color: var(--color-text);
+    padding: var(--spacing-medium) var(--spacing-large);
+    font-size: 1.125rem;
+}
+
+.ctaArrow {
+    margin-left: var(--spacing-small);
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */

@@ -1,0 +1,146 @@
+.footer {
+    background-color: #F5F7FA;
+    color: var(--color-text);
+    font-family: var(--sans);
+    font-size: var(--font-size-3);
+    line-height: 1.6;
+    padding: var(--spacing-large) var(--spacing-medium);
+}
+
+.container {
+    max-width: var(--width-5);
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+}
+
+.section {
+    border-top: 1px solid var(--color-border);
+    background-color: white; /* 背景色を白に設定 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* カード型の影を追加 */
+    padding: var(--spacing-medium); /* カード内の余白を追加 */
+}
+
+
+.sectionButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-medium) 0;
+    text-align: left;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.sectionList {
+    padding-bottom: var(--spacing-medium);
+    list-style-type: none;
+    font-size: 0.875rem; /* フォントサイズを少し小さくする */
+    margin: 0; /* リストの外側の余白を削除 */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    text-decoration: none;
+    padding: var(--spacing-small) 0;
+    font-size: 0.875rem; /* フォントサイズを少し小さくする */
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.externalIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: var(--spacing-small);
+}
+
+.pageTopWrapper {
+    margin-bottom: var(--spacing-large);
+}
+
+.pageTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: var(--spacing-medium);
+    border: 1px solid var(--color-text);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pageTop:hover {
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+.pageTopIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: var(--spacing-small);
+}
+
+.quickLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+    list-style-type: none;
+}
+
+.quickLink {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.quickLink:hover {
+    text-decoration: underline;
+}
+
+.companyInfo {
+    text-align: left; /* 中央寄せから左寄せに変更 */
+    margin-bottom: var(--spacing-medium);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+    .pageTop {
+        width: auto;
+        padding: var(--spacing-medium) var(--spacing-large);
+    }
+}

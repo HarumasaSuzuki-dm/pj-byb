@@ -1,0 +1,162 @@
+.container {
+    width: 100%;
+    max-width: 390px; /* 常にモバイル幅に固定 */
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+}
+
+.section {
+    padding: var(--spacing-large) 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.titleStrong {
+    color: var(--color-primary);
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0 var(--spacing-small);
+    /* background-color: var(--color-accent); */
+    
+}
+
+.titleSmall {
+    display: block;
+    font-size: 16px;
+    margin-top: var(--spacing-small);
+}
+
+.carouselWrapper {
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselItem {
+    flex: 0 0 100%; /* 常に1スライド表示 */
+    scroll-snap-align: start;
+    padding: 0 var(--spacing-medium);
+}
+
+.imageWrapper {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 中央に配置 */
+    text-align: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+.appImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.appInfo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+}
+
+.appLogo {
+    border-radius: 8px;
+    border: 2px solid var(--color-background);
+}
+
+.nisaBadge {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-text);
+    border-radius: 2px;
+    padding: 2px var(--spacing-small);
+    display: inline-block;
+    margin-bottom: var(--spacing-small);
+}
+
+.appTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.appDescription {
+    font-size: 14px;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 50%;
+    padding: var(--spacing-small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.carouselButton:hover,
+.carouselButton:focus {
+    opacity: 1;
+}
+
+.carouselButton:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.carouselButtonPrev {
+    left: 8px;
+}
+
+.carouselButtonNext {
+    right: 8px;
+}
+
+.carouselButtonIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.carouselDots {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-medium);
+}
+
+.carouselDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+    margin: 0 var(--spacing-small);
+    padding: 0;
+    border: none;
+}
+
+.carouselDotActive {
+    background-color: var(--color-primary);
+}
+
+/* メディアクエリを削除して常にモバイルスタイルを適用 */
