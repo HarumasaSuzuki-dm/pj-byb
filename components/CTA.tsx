@@ -81,7 +81,7 @@ export default function CTA() {
             >
               <Image
                 src="/images/pick-up-campaign.png"
-                alt="Pick Up Campaign"
+                alt="Bybit(バイビット)のピックアップキャンペーン"
                 width={800}
                 height={160}
                 className={styles.image}

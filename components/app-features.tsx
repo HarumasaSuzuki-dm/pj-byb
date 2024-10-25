@@ -67,7 +67,7 @@ export default function AppFeatures() {
               <div className={styles.imageWrapper}>
                 <Image
                   src={app.image}
-                  alt=""
+                  alt="Bybit(バイビット)のスマホアプリ"
                   width={200}
                   height={380}
                   className={styles.appImage}
@@ -77,7 +77,7 @@ export default function AppFeatures() {
               <div className={styles.appInfo}>
                 <Image
                   src={app.logo}
-                  alt=""
+                  alt="Bybit(バイビット)のスマホアプリロゴ"
                   width={72}
                   height={72}
                   className={styles.appLogo}

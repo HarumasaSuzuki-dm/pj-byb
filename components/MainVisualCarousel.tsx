@@ -7,10 +7,9 @@ import styles from './MainVisualCarousel.module.css'
 import LayoutSection from './LayoutSection'
 
 const images = [
-  '/images/fv1.png',
-  '/images/fv2.png',
-  '/images/fv3.png',
-  
+  { src: '/images/fv1.png', alt: '暗号資産(仮想通貨)取引するならBybit (バイビット)' },
+  { src: '/images/fv2.png', alt: 'Bybit (バイビット)は顧客満足度ランキングNo1' },
+  { src: '/images/fv3.png', alt: 'Bybit (バイビット)は初回入金するだけで6,000円分のボーナス' },
 ]
 
 export default function MainVisualCarousel() {
@@ -40,27 +39,26 @@ export default function MainVisualCarousel() {
   }
 
   return (
-    
-      <div className={styles.carouselContainer}>
-        <div className={styles.carouselInner}>
-          <div
-            className={styles.carouselFlex}
-            style={{ width: `${images.length * 100}%`, transform: `translateX(-${currentIndex * (100 / images.length)}%)` }}
-          >
-            {images.map((src, index) => (
-              <div key={index} className="w-full">
-                <Image
+    <div className={styles.carouselContainer}>
+      <div className={styles.carouselInner}>
+        <div
+          className={styles.carouselFlex}
+          style={{ width: `${images.length * 100}%`, transform: `translateX(-${currentIndex * (100 / images.length)}%)` }}
+        >
+          {images.map(({ src, alt }, index) => (
+            <div key={index} className="w-full">
+              <Image
                 src={src}
-                alt={`Slide ${index + 1}`}
+                alt={alt} // Altテキストを使用
                 width={390}
                 height={540}
-                className="w-full h-full object-cover" // 画像が親コンテナにフィットするように修正
+                className="w-full h-full object-cover"
                 sizes="(max-width: 390px) 390px, 800px"
-                />
-              </div>
-            ))}
-          </div>
+              />
+            </div>
+          ))}
         </div>
+      </div>
 
         <div className="flex justify-center items-center space-x-2"> 
         <button

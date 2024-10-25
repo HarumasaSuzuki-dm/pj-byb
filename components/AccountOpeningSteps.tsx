@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./AccountOpeningSteps.module.css";
 
 const steps = [
-  { number: "❶", title: "口座開設の申し込み", image: "/images/step_img_01.png" },
-  { number: "❷", title: "本人確認書類の提出", image: "/images/step_img_02.png" },
-  { number: "❸", title: "完了通知の受取り", image: "/images/step_img_03.png" },
-  { number: "❹", title: "初期設定", image: "/images/step_img_04.png" },
+  { number: "❶", title: "口座開設の申し込み", image: "/images/step_img_01.png", alt: "Bybit(バイビット)の口座開設の申し込みの画像" },
+  { number: "❷", title: "本人確認書類の提出", image: "/images/step_img_02.png", alt: "Bybit(バイビット)の本人確認書類の提出の画像" },
+  { number: "❸", title: "完了通知の受取り", image: "/images/step_img_03.png", alt: "Bybit(バイビット)の完了通知の受取りの画像" },
+  { number: "❹", title: "初期設定", image: "/images/step_img_04.png", alt: "Bybit(バイビット)の初期設定の画像" },
 ];
 
 export default function AccountOpeningSteps() {
@@ -28,11 +28,11 @@ export default function AccountOpeningSteps() {
                 <h3 className={styles.stepTitle}>{step.title}</h3>
               </div>
               <div className={styles.stepImageContainer}>
-                <img
-                  src={`${step.image}`}
-                  alt=""
-                  className={styles.stepImage}
-                />
+              <img
+                src={`${step.image}`}
+                alt={step.alt}
+                className={styles.stepImage}
+              />
               </div>
             </div>
             {index < steps.length - 1 && (

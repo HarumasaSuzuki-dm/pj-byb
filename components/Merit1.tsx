@@ -24,7 +24,7 @@ export default function Merit1() {
           <div className={styles.relative}>
             <Image
               src="/images/merit-spread.png"
-              alt="業界最狭のスプレッド"
+              alt="Bybit(バイビット)は業界最狭のスプレッド"
               width={300}
               height={300}
               className={styles.image}
@@ -43,7 +43,7 @@ export default function Merit1() {
           <div className={styles.relative}>
             <Image
               src="/images/merit-levarege.png"
-              alt="最大100倍のハイレバレッジ"
+              alt="Bybit(バイビット)は最大100倍のハイレバレッジ"
               width={300}
               height={300}
               className={styles.image}
