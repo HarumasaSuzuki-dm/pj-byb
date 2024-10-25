@@ -2,6 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout'; // Layoutコンポーネントをインポート
 import Footer from '../components/common/Footer';
+import Head from 'next/head';
 
 import MainVisualCarousel from '../components/MainVisualCarousel'; // MainVisualCarouselコンポーネントをインポート
 import CTA from '../components/CTA'; // CTAコンポーネントをインポート
@@ -19,7 +20,7 @@ export default function HomePage() {
   return (
     <>
     <Head>
-      <title>ホームページのタイトル</title>
+      <title>Bybit(バイビット) | ビットコイン、アルトコインの取引・購入・売却</title>
       <meta name="description" content="このページのメタディスクリプションをここに記述します。" />
     </Head>
     <Layout>
@@ -39,3 +40,8 @@ export default function HomePage() {
     </>
   );
 }
+
+次世代の取引体験をあなたに。BTC、アルトコイン、NFTを購入、売却、取引しよう。現物・先物で取引することも、暗号資産を安全に保管することもできます。
+
+Bybitは信頼性のある仮想通貨(暗号資産)取引におすすめの取引所。BTC、アルトコイン、NFTを
+入金方法、紹介コード、アプリ、出金、金融庁の規制、ステーキングについて
