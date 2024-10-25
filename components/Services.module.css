@@ -31,6 +31,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 常に2列表示 */
   gap: var(--spacing-large);
+  
 }
 
 .serviceItem {
@@ -40,8 +41,8 @@
   justify-content: center;
   padding: var(--spacing-medium);
   height: 140px;
-  border-radius: 0.5rem;
-  background-color: var(--color-background);
+  border-radius: 8px;
+  background-color: white;
   transition: all 0.3s ease;
 }
 

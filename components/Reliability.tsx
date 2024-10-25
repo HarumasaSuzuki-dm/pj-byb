@@ -3,7 +3,7 @@ import styles from './Reliability.module.css';
 
 export default function Reliability() {
   return (
-    <section className={`${styles.reliabilitySection} container`}>
+    <section className={`${styles.reliabilitySection}`}>
       <div className={styles.container}>
         <h2 className={styles.title}>
           <span className={styles.titleText}>

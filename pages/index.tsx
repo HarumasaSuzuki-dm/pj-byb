@@ -33,7 +33,7 @@ export default function HomePage() {
       <AppFeatures />
       <AccountOpeningSteps />
       <SecurityInfo />
-      <CustomerSupport />
+      {/* <CustomerSupport /> */}
       <SnsLinks />
       <Footer />
     </Layout>

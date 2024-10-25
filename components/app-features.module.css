@@ -1,8 +1,9 @@
 .container {
     width: 100%;
-    max-width: 390px; /* 常にモバイル幅に固定 */
+   
     margin: 0 auto;
     padding: 0 var(--spacing-medium);
+    background-color: white;
 }
 
 .section {

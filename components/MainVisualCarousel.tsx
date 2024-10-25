@@ -62,7 +62,7 @@ export default function MainVisualCarousel() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-4 space-x-2 bg-white"> 
+        <div className="flex justify-center items-center space-x-2"> 
         <button
             onClick={goToPrevious}
             className={styles.carouselButton}

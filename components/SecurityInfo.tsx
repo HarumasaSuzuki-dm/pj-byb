@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, MessageCircle, Users } from "lucide-react";
+import { Shield, MessageCircle, Users ,ChevronRight} from "lucide-react";
 import styles from "./SecurityInfo.module.css";
 
 // ... 既存のコード ...
@@ -26,7 +26,28 @@ const SecurityInfo: React.FC = () => {
       description: "Bybitは、ユーザーの利益を最優先に考えた運営方針を採用しています。ゼロカットシステムにより、ユーザーの損失が証拠金を超えないように配慮しています。",
       buttonText: "運営方針の詳細を見る",
       href: "https://www.bybit.com/ja-JP/promo/global/aboutus"
-    }
+    },
+    {
+      imageSrc: "/images/icon8.png", // 画像のパスを指定
+      title: "よくあるご質問",
+      description: "口座開設や入出金・お取引に関するよくあるご質問は下記よりご確認いただけます。",
+      buttonText: "よくあるご質問",
+      href: "https://www.bybit.com/ja-JP/help-center/"
+    },
+    {
+      imageSrc: "/images/icon9.png", // 画像のパスを指定
+      title: "Bybitアカデミー",
+      description: "Bybitは、ユーザーの利益を最優先に考えた運営方針を採用しています。ゼロカットシステムにより、ユーザーの損失が証拠金を超えないように配慮しています。",
+      buttonText: "Bybitアカデミー",
+      href: "https://learn.bybit.com/ja/"
+    },
+    {
+      imageSrc: "/images/icon10.png", // 画像のパスを指定
+      title: "サポートデスク",
+      description: "24時間日本語でのお電話でのサポートを行っております。お困りのことがありましたらお気軽にご相談ください。",
+      buttonText: "その他のお問い合わせ",
+      href: "https://www.bybit.com/ja-JP/help-center/s/webform"
+    },
   ];
 
   return (
@@ -42,8 +63,9 @@ const SecurityInfo: React.FC = () => {
               <h3 className={styles.title}>{item.title}</h3>
               <p className={styles.description}>{item.description}</p>
               <div className={styles.buttonWrapper}>
-                <a href={item.href} target="_blank" className={styles.button}>
-                  {item.buttonText}
+                <a href={item.href} target="_blank" className={styles.btnSecondary}>
+                  {item.buttonText}<ChevronRight className={styles.btnIcon} />
+                  
                 </a>
               </div>
             </div>

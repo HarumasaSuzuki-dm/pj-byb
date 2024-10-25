@@ -1,8 +1,9 @@
 .reliabilitySection {
-    max-width: 375px; /* モバイル幅に固定 */
+    
     margin: 0 auto;
     padding: 3rem 1rem;
     background-color: white;
+    border-radius: 8px; /* 角を丸くする */
 }
 
 .container {

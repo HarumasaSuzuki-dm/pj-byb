@@ -1,6 +1,6 @@
 .snsSection {
     composes: section from './LayoutSection.module.css';
-    background-color: var(--color-background);
+    background-color: white;
     color: var(--color-text);
     padding: var(--spacing-large) 0;
   }
