@@ -21,7 +21,7 @@ export default function HomePage() {
     <>
     <Head>
       <title>Bybit(バイビット) | ビットコイン、アルトコインの取引・購入・売却</title>
-      <meta name="description" content="このページのメタディスクリプションをここに記述します。" />
+      <meta name="description" content="Bybitは信頼性のある仮想通貨(暗号資産)取引におすすめの取引所。BTC、アルトコイン、NFTを取引・購入・売却できる。入金方法、紹介コード、アプリ、出金、金融庁の規制、ステーキングについても日本人初心者向けにわかりやすく承継しております" />
     </Head>
     <Layout>
       <MainVisualCarousel />
