@@ -17,6 +17,11 @@ import SnsLinks from '../components/SnsLinks';
 
 export default function HomePage() {
   return (
+    <>
+    <Head>
+      <title>ホームページのタイトル</title>
+      <meta name="description" content="このページのメタディスクリプションをここに記述します。" />
+    </Head>
     <Layout>
       <MainVisualCarousel />
       <CTA />  
@@ -31,5 +36,6 @@ export default function HomePage() {
       <SnsLinks />
       <Footer />
     </Layout>
+    </>
   );
 }
