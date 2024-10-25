@@ -16,7 +16,7 @@ export default function CTA() {
               <span className={styles.redLine}></span>
             </h2>
             <Link
-              href="https://m.sbisec.co.jp/eatiw011?_scpr=intpr%3d20230902visitor_rn_gaccnt"
+              href="https://partner.bybit.com/b/mdsf"
               target="_blank"
               className={styles.linkButton}
             >
