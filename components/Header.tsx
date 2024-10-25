@@ -148,7 +148,7 @@ export default function Header() {
                         <div className={`${styles.mobileMenuContent} ${isMenuOpen ? styles.contentVisible : styles.contentHidden}`}>
                             <div className={styles.mobileMenuInner}>
                                 <div className={styles.mobileMenuHeader}>
-                                    <h2 className={styles.mobileMenuTitle}>メニュー</h2>
+                                    <div className={styles.mobileMenuTitle}>メニュー</div>
                                     <div className={styles.closeButtonContainer}>
                                         <button
                                             type="button"

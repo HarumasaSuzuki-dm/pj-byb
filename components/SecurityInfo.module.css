@@ -2,7 +2,9 @@
     width: 100%;
     max-width: 390px; /* モバイル幅に固定 */
     margin: 0 auto;
-    padding: var(--spacing-medium);
+    
+    padding: 3rem var(--spacing-medium);
+    
 }
 
 .verticalList {
@@ -10,6 +12,14 @@
     flex-direction: column;
     gap: var(--spacing-large);
 }
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 4rem;
+  }
 
 .card {
     background-color: var(--color-secondary);

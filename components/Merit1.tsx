@@ -8,27 +8,23 @@ export default function Merit1() {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.textCenter}>
-          <h2 className={styles.heading}>
-            
-            Bybitで仮想通貨取引を始めよう
-            
-          </h2>
+          <div className={styles.heading}>Bybitで仮想通貨取引を始めよう</div>
         </div>
 
-        <h3 className={styles.title}>
+        <h2 className={styles.title}>
           <span className={styles.subtitle}>Bybitなら</span>
           <span className={styles.highlight}>
             リスクを分散させて
             <sup className={styles.sup}></sup> 大きなリターンを
           </span>
           <span className={styles.subtitle}>狙えます!</span>
-        </h3>
+        </h2>
 
         <div className={styles.flexContainer}>
           <div className={styles.relative}>
             <Image
               src="/images/merit-spread.png"
-              alt="ゼロ革命 業界初※2の手数料革命 現物も信用も国内株式売買手数料0円 ※1"
+              alt="業界最狭のスプレッド"
               width={300}
               height={300}
               className={styles.image}
@@ -47,7 +43,7 @@ export default function Merit1() {
           <div className={styles.relative}>
             <Image
               src="/images/merit-levarege.png"
-              alt="新NISA 2024年から投資上限額が引き上げ！非課税期間も無期限に 投資可能額が増え、ずっと非課税に！"
+              alt="最大100倍のハイレバレッジ"
               width={300}
               height={300}
               className={styles.image}

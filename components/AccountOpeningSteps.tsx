@@ -25,7 +25,7 @@ export default function AccountOpeningSteps() {
             <div className={styles.stepContent}>
               <div className={styles.stepHeader}>
                 <span className={styles.stepNumber}>{step.number}</span>
-                <span className={styles.stepTitle}>{step.title}</span>
+                <h3 className={styles.stepTitle}>{step.title}</h3>
               </div>
               <div className={styles.stepImageContainer}>
                 <img

@@ -7,11 +7,7 @@ export default function CustomerSupport() {
     return (
         <section className={styles.section}>
             <div className={styles.container}>
-                <h2 className={styles.title}>
-                    <HelpCircle className={styles.titleIcon} />
-                    お客さまサポート
-                </h2>
-
+                
                 <div className={styles.cardContainer}>
                     <div className={styles.card}>
                         <h3 className={styles.cardTitle}>よくあるご質問</h3>

@@ -10,11 +10,11 @@ export default function CTA() {
         <div className={styles.spaceY8}>
           {/* NISA Application Section */}
           <div className={styles.textCenter}>
-            <h2 className={styles.heading}>
+            <div className={styles.heading}>
               <span className={styles.redLine}></span>
               登録だけでボーナスをゲット！
               <span className={styles.redLine}></span>
-            </h2>
+            </div>
             <Link
               href="https://partner.bybit.com/b/mdsf"
               target="_blank"
@@ -39,10 +39,10 @@ export default function CTA() {
 
           {/* Information Box */}
           <div className={styles.infoBox}>
-            <h4 className={styles.infoHeading}>
+            <div className={styles.infoHeading}>
               <AlertCircle className={styles.icon} />
               ご案内
-            </h4>
+            </div>
             <ul className={styles.infoList}>
               <li>
                 <Link
@@ -69,11 +69,11 @@ export default function CTA() {
 
           {/* Pick Up Campaign Section */}
           <div className={styles.campaignSection}>
-          <h2 className={`${styles.heading} ${styles.spaceBetween}`}>
+          <div className={`${styles.heading} ${styles.spaceBetween}`}>
               <span className={styles.blueLine}></span>
               ピックアップキャンペーン
               <span className={styles.blueLine}></span>
-            </h2>
+            </div>
             <Link
               href="https://www.bybitglobal.com/ja-JP/wsot2024"
               target="_blank"

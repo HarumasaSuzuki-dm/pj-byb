@@ -37,6 +37,7 @@
     padding: var(--spacing-small);
     width: 100%; /* 常に全幅を使用 */
     margin-bottom: calc(var(--spacing-medium) * 2); /* 矢印のための余白を追加 */
+    background-color: #FFFFFF; 
 }
 
 .stepCardBorder {

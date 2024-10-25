@@ -8,7 +8,7 @@ const SecurityInfo: React.FC = () => {
   const items = [
     {
       imageSrc: "/images/icon4.png", // 画像のパスを指定
-      title: "安全性への取り組み",
+      title: "Bybitの安全性への取り組み",
       description: "Bybitは、ユーザーの資産を守るために多層的なセキュリティ対策を講じています。コールドウォレットやマルチシグネチャ技術を採用し、資産の安全性を高めています。",
       buttonText: "セキュリティ対策を見る",
       href: "https://www.bybitglobal.com/ja-JP/promo/global/user-protection"
@@ -31,6 +31,7 @@ const SecurityInfo: React.FC = () => {
 
   return (
     <section className={styles.container}>
+      <h2 className={styles.sectionTitle}>Bybitのお客様サポート</h2>
       <div className={styles.verticalList}>
         {items.map((item, index) => (
           <div key={index} className={styles.card}>
