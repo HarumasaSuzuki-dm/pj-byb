@@ -130,12 +130,12 @@ export default function Header() {
                             </button>
                         </div>
                         <div className={styles.logo}>
-                            <Link href="/contents/">
-                                <span className="sr-only">SBI証券</span>
+                            <Link href="#">
+                                <span className="sr-only">Bybit</span>
                                 <img
                                     className={styles.logoImage}
                                     src="/images/bybit-logo.svg"
-                                    alt="SBI証券"
+                                    alt="Bybit 公式"
                                 />
                             </Link>
                         </div>
